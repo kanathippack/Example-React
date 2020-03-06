@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Route, NavLink } from 'react-router-dom'
-
+import Service from './Service/Service'
 
 import Pack from './Page/Pack'
 import Nice from './Page/Nice'
@@ -10,6 +10,9 @@ const Home = () => <h1>Home</h1>
 const About = () => <h1>Example React Baiwa Trainee. Start date 6/03/2020</h1>
 
 class App extends Component {
+  componentDidMount(){
+
+  }
   render() {
     return (
       // width="112" height="50"
