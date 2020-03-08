@@ -10,7 +10,7 @@ const Home = () => <h1>Home</h1>
 const About = () => <h1>Example React Baiwa Trainee. Start date 6/03/2020</h1>
 
 class App extends Component {
-  componentDidMount(){
+  componentDidMount() {
 
   }
   render() {
@@ -21,7 +21,7 @@ class App extends Component {
           <div className="container">
             <div className="navbar-brand">
               <a className="navbar-item" href="http://baiwa.co.th/">
-                <img src="http://baiwa.co.th/uploads/setting/baiwalogo.png" alt="BAIWA LOGO"  />
+                <img src="http://baiwa.co.th/uploads/setting/baiwalogo.png" alt="BAIWA LOGO" />
               </a>
             </div>
             <div className="navbar-menu">
@@ -29,6 +29,7 @@ class App extends Component {
                 <NavLink exact to="/" activeClassName="is-active" className="navbar-item">Home</NavLink>
                 <NavLink to="/pack" activeClassName="is-active" className="navbar-item">Pack</NavLink>
                 <NavLink to="/nice" activeClassName="is-active" className="navbar-item">Nice</NavLink>
+
                 <NavLink to="/about" activeClassName="is-active" className="navbar-item">About</NavLink>
                 {/* <a className="navbar-item" href="https://github.com/phonbopit" target="_blank">Star on <i className="fab fa-github"></i></a> */}
               </div>
@@ -39,6 +40,7 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/pack" component={Pack} />
+
           <Route path="/nice" component={Nice} />
         </div>
       </div>
